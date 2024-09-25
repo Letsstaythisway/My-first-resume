@@ -1,0 +1,164 @@
+body {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: auto;
+}
+
+.main-parent {
+  background: aliceblue;
+  display: grid;
+  align-items: start;
+  justify-content: start;
+  gap: 10px;
+  grid-template-areas: "aside section";
+  grid-template-columns: 1fr 3fr;
+}
+
+.aside {
+  background-color: rgb(47, 47, 140);
+  display: grid;
+  height: auto;
+  padding: 10px 5px;
+  grid-template-areas:
+    "image"
+    "contact"
+    "education"
+    "skills";
+  margin: 15px;
+}
+
+/* image section */
+.image {
+  grid-area: image;
+  width: auto;
+  height: 250px;
+  background: rgb(47, 47, 140);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  height: 220px;
+  width: auto;
+  border: 3px white solid;
+  border-radius: 50%;
+}
+
+/* contact section */
+
+.contact {
+  grid-area: contact;
+  width: auto;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+}
+
+.contact hr {
+  width: 100%;
+}
+
+.contact a {
+  color: rgb(122, 187, 187);
+}
+
+.contact-flex {
+  width: 75%;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  font-size: 15px;
+  margin-top: 1px;
+}
+
+/* education section */
+
+.education {
+  grid-area: education;
+  width: auto;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+}
+
+.education-flex {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.education hr {
+  width: 100%;
+}
+
+/* skills section */
+
+.skills {
+  grid-area: skills;
+  width: auto;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+}
+
+.skills-flex {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills hr {
+  width: 100%;
+}
+
+/* another container for the main section */
+
+.section {
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+  padding: 10px 5px;
+  display: grid;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+  grid-template-areas:
+    "name"
+    "summary"
+    "work";
+}
+
+/* name section  */
+
+.name {
+  grid-area: name;
+}
+
+/* summary section */
+.summary {
+  grid-area: summary;
+}
+
+.summary hr {
+  width: 100%;
+}
+
+/* work section 
+ */
+.work {
+  grid-area: work;
+}
+
+.workflex {
+  display: flex;
+  flex-direction: column;
+}
+
+.work2 {
+  margin-top: 30px;
+}
